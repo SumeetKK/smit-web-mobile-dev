@@ -1,0 +1,45 @@
+body{
+    color: white;
+    font-family: calibri;
+}
+
+.center{
+    text-align: center;
+}
+
+.heading{
+    color: slateblue;
+    text-decoration: underline;
+}
+
+.heading, label{
+    text-transform: uppercase;
+}
+
+table{
+    margin: 0 auto;
+    background-color: slateblue;
+}
+
+td{
+    padding: 10px;
+}
+
+td > table  td {
+    padding: 2px;
+}
+td > table input {
+    width: 95%;
+}
+
+.thankyou{
+    font-family: 'Times New Roman', Times, serif;
+    color: slateblue;
+    text-transform: unset;
+}
+.thankyou img{
+    margin-top: 100px;
+}
+.green{
+    color: green;
+}
