@@ -124,7 +124,7 @@ document.write('<p>Variables must begin with a letter, $ or _. For example $name
 document.write('<p>Variable names are case sensitive</p>')
 document.write('<p>Variable names should not be JS keywords</p>')
 
-*/
+
 
 // ------------------------ End of Chapter 4 ------------------------ //
 
@@ -335,4 +335,140 @@ document.write('<p>Estimated Maximum Age: ' + maxAge + '</p>')
 document.write('<p>Amount of snacks per day: ' + amount + '</p>')
 document.write('<p>You will need ' + lifetime + ' to last you until the ripe old age of ' + maxAge + '</p>')
 
+*/
+
 // ------------------------ End of Chapter 5 ------------------------ //
+
+
+// ------------------------ Chapter 6 - 9 : Math Expressions ------------------------ //
+
+//Q1
+var a = +prompt('Input a number: ')
+document.write('<h3>' + 'Pre and Post Increment/ Decrement Operation' + '</h3>')
+document.write('<p>Result</p>')
+document.write('<p>The value of a is: ' + a + '</p>')
+document.write('<p>...............................................' + '</p>')
+document.write('<br/>')
+
+// Q1a. Pre-Increment
+document.write('<p>The value of ++a is: ' + ++a + '</p>')
+document.write('<p>Now the value of a is: ' + a + '</p>')
+document.write('<br/>')
+
+// Q1b. Post-Increment
+document.write('<p>The value of a++ is: ' + a++ + '</p>')
+document.write('<p>Now the value of a is: ' + a + '</p>' )
+document.write('<br/>')
+
+// Q1c. Pre-Decrement
+document.write('<p>The value of --a is: ' + --a + '</p>')
+document.write('<p>Now the value of a is: ' + a + '</p>')
+document.write('<br/>')
+
+// Q1d. Post-Decrement
+document.write('<p>The value of a-- is: ' + a-- + '<br/>')
+document.write('<p>Now the value of a is: ' + a + '</p>' )
+
+//Q2
+var a = 2, b = 1
+document.write('a is :' + a +'<br>')
+document.write('b is :' + b +'<br>')
+var result = --a - --b + ++b + b--
+document.write('result is :' + result)
+document.write('<br />')
+document.write('<h2>Explaination</h2>')
+document.write('output at stage "--a" = 1 <br />')
+document.write('output at stage "--a - --b" =  1 - 0  = 1<br />')
+document.write('output at stage " --a - --b + ++b" =  (1 - 0) + 2 = 3<br />')
+document.write('output at stage "--a - --b + ++b + b--" =  ((1 - 0) + 2) + 0 = 3<br />')
+
+//Q3
+var name = prompt('Enter your name: ')
+document.write('Hello ' + name + '<br/>')
+
+//Q4
+//Do Nothing
+
+//Q5
+var num = +prompt('Enter Number for Table Multiplication:', 5)
+if(num === null || num === 0) num = 5
+var count = 1
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+document.write(num + 'x' + count++ + '=' + (num * count) + '<br/>')
+
+
+//Q6
+document.write('<h3>' + 'Marksheet' + '</h3>')
+
+// Q6a. Prompt 3 Subjects
+subject1 = prompt('Enter Name of Subject 1:')
+subject2 = prompt('Enter Name of Subject 2:')
+subject3 = prompt('Enter Name of Subject 3:')
+
+// Q6b. Store Total marks of subjects
+var total1, total2, total3
+total1 = total2 = total3 = 100
+
+// Q6c. Store Sub1 Obtained
+obtained1 = prompt('Enter Marks of ' + subject1)
+
+// Q6d. Store Sub2,3 Obtained
+obtained2 = prompt('Enter Marks of ' + subject2)
+obtained3 = prompt('Enter Marks of ' + subject3)
+
+// Q6e. Calculate
+var obtainedMarks = (parseFloat(obtained1) + parseFloat(obtained2) + parseFloat(obtained3))
+var totalMarks = total1 + total2 + total3
+var percentage = ((obtainedMarks / totalMarks) * 100).toFixed(2)
+var percentage1 = ((obtained1 / total1) * 100).toFixed(2)
+var percentage2 = ((obtained2 / total2) * 100).toFixed(2)
+var percentage3 = ((obtained3 / total3) * 100).toFixed(2)
+
+document.write('<table width="100%" border="1px">')
+
+document.write('<tr>')
+    document.write('<th>' + 'Subject'  + '</th>')
+    document.write('<th>' + 'Total Marks'  + '</th>')
+    document.write('<th>' + 'Obtained Marks'  + '</th>')
+    document.write('<th>' + 'Percentage'  + '</th>')
+document.write('</tr>')
+
+document.write('<tr>')
+    document.write('<td>' + subject1  + '</td>')
+    document.write('<td>' + total1  + '</td>')
+    document.write('<td>' + obtained1  + '</td>')
+    document.write('<td>' + percentage1 + '%' + '</td>')
+document.write('</tr>')
+
+document.write('<tr>')
+    document.write('<td>' + subject2  + '</td>')
+    document.write('<td>' + total2  + '</td>')
+    document.write('<td>' + obtained2  + '</td>')
+    document.write('<td>' + percentage2 + '%' + '</td>')
+document.write('</tr>')
+
+document.write('<tr>')
+    document.write('<td>' + subject3  + '</td>')
+    document.write('<td>' + total3  + '</td>')
+    document.write('<td>' + obtained3  + '</td>')
+    document.write('<td>' + percentage3 + '%' + '</td>')
+document.write('</tr>')
+
+document.write('<tr>')
+    document.write('<td></td>')
+    document.write('<td>' + totalMarks  + '</td>')
+    document.write('<td>' + obtainedMarks  + '</td>')
+    document.write('<td>' + percentage + '%' + '</td>')
+document.write('</tr>')
+
+document.write('</table>')
+
+// ------------------------ End of Chapter 6-9 ------------------------ //
