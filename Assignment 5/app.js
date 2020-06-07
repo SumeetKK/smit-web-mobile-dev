@@ -16,7 +16,7 @@ alert('Happy Coding!');
 
 //Q5
 console.log('Yes I can generate alert using developer tools\' console, but I cannot write code for it')
-*/
+
 
 // ------------------------ End of Chapter 1 ------------------------ //
 
@@ -40,7 +40,7 @@ var name = prompt('Please enter your name:');
 var age = prompt('Please enter your age:');
 var course = prompt('Please enter your course name:');
 alert(name);
-alert(age+" years old");
+alert(age+' years old');
 alert(course);
 
 
@@ -63,5 +63,33 @@ document.write('Yah! I can write HTML content through JavaScript');
 var line = '▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬';
 alert(line);
 
-
+*/
 // ------------------------ End of Chapter 2 ------------------------ //
+
+
+
+// ------------------------ Chapter 3 : Variables for Numbers ------------------------ //
+
+//Q1
+var age = 24;
+alert('I am ' +age+ ' years old');
+
+//Q2
+var visits = 44;
+alert('You have visited this site ' +visits+ ' times.');
+
+//Q3
+var birthYear = 1996;
+document.write('My birth year is ' + birthYear)
+document.write('<br />')
+document.write('Data type of my declared variable is ' + typeof birthYear);
+document.write('<br />')
+
+//Q4
+var visitorsName = 'Sumeet Kumar';
+var productTitle = 'T-Shirt';
+var quantity = 5;
+document.write('<strong>' +visitorsName+ '</strong> ordered <strong>' + quantity + ' ' + productTitle + '</strong>(s) on XYZ Clothing store')
+
+
+// ------------------------ End of Chapter 3 ------------------------ //
